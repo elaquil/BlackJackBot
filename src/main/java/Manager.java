@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 public class Manager {
 
-    public static final String DB_PATH = "jdbc:sqlite:/Users/ismael/Documents/IntelliJ Projects/BlackJackBot/src/main/resources/blackJackDB.db";
+    public static final String DB_PATH = "jdbc:sqlite:src/main/resources/blackJackDB.db";
     public static final int MIN_MONEY = 10;
     static Scanner scan = new Scanner(System.in);
     int userBet = 0;
