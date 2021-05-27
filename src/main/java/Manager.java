@@ -12,6 +12,7 @@ public class Manager {
     int userBet = 0;
     public static HashMap<String, BlackJack> gameHash = new HashMap<String, BlackJack>();
 
+    /*
     public static void main(String[] args) throws EmptyDeckException, IllegalCardException, SQLException {
         DataBaseManager.connect(DB_PATH);
         System.out.println("What's your name?");
@@ -30,6 +31,5 @@ public class Manager {
         currentGame.firstDraw();
         gameHash.remove(name);
         System.exit(1);
-    }
-
+    }*/
 }
