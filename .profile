@@ -1,3 +1,3 @@
-chmod +X target/bin/bot.bat
+chmod +x target/bin/bot.bat
 
-chmod +X target/bin/bot
+chmod +x target/bin/bot
