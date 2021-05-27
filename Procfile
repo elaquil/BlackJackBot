@@ -1,1 +1,1 @@
-Worker: target/bin/Bot
+Worker: target/bin/bot.bat
