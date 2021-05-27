@@ -1,1 +1,1 @@
-Worker: java -cp target/classes org.JACKOFF.BlackJackBot.Bot
+Worker: java -cp target/classes/ Bot
