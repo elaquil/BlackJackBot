@@ -20,6 +20,10 @@
         </plugins>
     </build>
 
+    <properties>
+        <java.version>14</java.version>
+    </properties>
+
     <dependencies>
         <dependency>
             <groupId>net.dv8tion</groupId>
