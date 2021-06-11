@@ -1,3 +1,1 @@
-chmod +x target/bin/bot.bat
-
-chmod +x target/bin/bot
+chmod +x target/BlackJackBot-0.1 ALPHA.jar

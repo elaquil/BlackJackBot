@@ -15,34 +15,24 @@
     <build>
         <plugins>
             <plugin>
-                <groupId>org.codehaus.mojo</groupId>
-                <artifactId>appassembler-maven-plugin</artifactId>
-                <version>1.1.1</version>
-                <configuration>
-                    <assembleDirectory>target</assembleDirectory>
-                    <programs>
-                        <program>
-                            <mainClass>Bot</mainClass>
-                            <name>bot</name>
-                        </program>
-                    </programs>
-                </configuration>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-shade-plugin</artifactId>
+                <version>3.2.4</version>
                 <executions>
                     <execution>
                         <phase>package</phase>
                         <goals>
-                            <goal>assemble</goal>
+                            <goal>shade</goal>
                         </goals>
+                        <configuration>
+                            <transformers>
+                                <transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
+                                    <mainClass>Bot.java</mainClass>
+                                </transformer>
+                            </transformers>
+                        </configuration>
                     </execution>
                 </executions>
-            </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.6.2</version>
-                <configuration>
-                    <release>14</release>
-                </configuration>
             </plugin>
         </plugins>
     </build>
